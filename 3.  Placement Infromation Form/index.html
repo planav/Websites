@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Regestration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Details For Placement Portal</h1>
+
+    <hr>
+
+    <div>
+        <form action="post">
+            <label for="gmail">Enter Your Email Address : </label>
+            <input type="text" id="gmail" name="gmail" placeholder="Email Address" autofocus>
+        </form>
+    </div>
+
+    <div>
+        <form action="post">
+            <input type="checkbox" id="email" name="email">
+            <label for="checkbox">Record your email for future purpose ?</label>
+        </form>
+    </div>
+
+    <hr>
+
+    <h3>Personal Details</h3>
+
+    <div>
+        <form action="post">
+            <label for="name">1. Student Name : </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </form>
+    </div>
+
+    <br>
+
+    <div>
+        <form action="post">
+            <label for="gender">2. Choose your Gender(Male/Female/Other) : </label>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="Others">Others</label>
+            <input type="radio" name="gender" id="Others">
+        </form>
+    </div>
+    
+    <div>
+        <p>3. Select your Branch</p>
+        <select name="branch">
+            <option value="Computer">Computer Science</option>
+            <option value="Information">Information Science</option>
+            <option value="electronics">Electronics And Communication</option>
+            <option value="electrical">Electrical</option>
+            <option value="mechanical">Mechanical</option>
+            <option value="polymer">Polymer Science</option>
+            <option value="envi">Enviornmental</option>
+            <option value="ei">Electrical And Instrumental</option>
+        </select>
+    </div>
+
+    <div>
+        <p>4. Select your Semester</p>
+        <select name="sem">
+            <option value="1">1st Sem</option>
+            <option value="2">2nd Sem</option>
+            <option value="3">3rd Sem</option>
+            <option value="4">4th Sem</option>
+            <option value="5">5th Sem</option>
+            <option value="6">6th Sem</option>
+            <option value="7">7th Sem</option>
+            <option value="8">8th Sem</option>
+        </select>
+    </div>
+    <div>
+        <p>5. Add your Resume Link</p>
+        <textarea rows="2" cols="80" name="resume" id="resume" placeholder="Add your resume link here"></textarea>
+    </div>
+    <br>
+<hr>
+<form action="/submit">
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
